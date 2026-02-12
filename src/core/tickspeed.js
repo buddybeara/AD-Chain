@@ -22,7 +22,7 @@ export function effectiveBaseGalaxies() {
 export function getTickSpeedMultiplier() {
   if (InfinityChallenge(3).isRunning) return DC.D1;
   if (Ra.isRunning) return DC.C1D1_1245;
-  let galaxies = effectiveBaseGalaxies();
+  let galaxies = effectiveBaseGalaxies().times(2).add(1);
   const effects = Effects.product(
     InfinityUpgrade.galaxyBoost,
     InfinityUpgrade.galaxyBoost.chargedEffect,

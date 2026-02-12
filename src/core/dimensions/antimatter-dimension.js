@@ -5,7 +5,7 @@ import { DimensionState } from "./dimension";
 // Multiplier applied to all Antimatter Dimensions, regardless of tier. This is cached using a Lazy
 // and invalidated every update.
 export function antimatterDimensionCommonMultiplier() {
-  let multiplier = DC.D1;
+  let multiplier = new Decimal("10");
 
   multiplier = multiplier.times(Achievements.power);
 
